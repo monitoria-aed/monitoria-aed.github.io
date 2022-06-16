@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: monitoria-aed/monitoria-aed.github.io
+  branch: main
+  site_domain: monumental-fenglisu-4e4482.netlify.app
+
+media_folder: "img"
+
+collections:
+  - name: "listas" # Used in routes, e.g., /admin/collections/blog
+    label: "Listas" # Used in the UI
+    folder: "src/listas" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
