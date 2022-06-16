@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "env NODE_ENV=production npx eleventy --pathprefix 'eleventy-gh-demo'",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy",
-    "test": "jest"
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production eleventy --pathprefix 'monitoria-aed.github.io'"
   },
   "repository": {
     "type": "git",
