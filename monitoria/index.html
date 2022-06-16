@@ -4,118 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/monitoria.css">
-    <link rel="stylesheet" href="./css/reset.css">
     <script src="https://kit.fontawesome.com/05efc4f42a.js" crossorigin="anonymous"></script>
-    <title>Monitoria - AED</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/monitoria.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title> Algoritmos e Estrutura de Dados</title>
 </head>
 <body>
-
+    
     <main>
-        <div class="container ">
-            <div class="info">
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./monitoria.html">Monitoria</a></li>
-                        <li><a href="./sobre.html">Sobre</a></li>
-                    </ul>
-                </nav>
-                <h1>Dias e Horários da Monitoria</h1>
-                <p>Ao lado os horários e locais onde ocorrerá as monitorias, remotas e presencias. Caso não consiga participar de uma determinada sessão, entre em contato com outro monitor e verifique se há como participar da reunião dele.</p>
-                
+    <div class="container ">
+        <div class="info">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./monitoria.html">Monitoria</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <h1>Dias e Horários da Monitoria</h1>
+            <p>Ao lado os horários e locais onde ocorrerá as monitorias, remotas e presencias. Caso não consiga participar de uma determinada sessão, entre em contato com outro monitor e verifique se há como participar da reunião dele.</p>
+            
+        </div>
+    </div>
+
+        <div class="img">
+            <img src="./img/rede-social.jpg" alt="Cena do filme A Rede Social">
+        </div>
+        <div class="box-container">
+            <div class="box" data-horario='{"sessoes":[[[4],[14,16]]]}'>
+                <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
+                <h3>Luiz Eduardo</h3>
+
+                <div class="box-info">
+                    <p>Monitor</p>
+                    <p>Presencial</p>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-calendar"></i>As quintas-feiras</li>
+                    <li><i class="fa-solid fa-clock"></i>14hrs às 15h30min</li>
+                    <li><i class="fa-solid fa-location-dot"></i>Aquário - FT</li>
+                </ul>
+            </div>
+
+            <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]]] }'>
+                <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
+
+                <h3>Vinícius Baião</h3>
+                <div class="box-info">
+                    <p>Monitor</p>
+                    <p>Presencial</p>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-calendar"></i>A definir</li>
+                    <li><i class="fa-solid fa-clock"></i>A definir</li>
+                    <li><i class="fa-solid fa-location-dot"></i>A definir</li>
+                </ul>
+            </div>
+
+            <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]],[[5],[13,16]],[[6,0],[9,20]]]}'>
+                <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
+
+                <h3>Vinícius Giovani</h3>
+                <div class="box-info">
+                    <p>Monitor</p>
+                    <p>Remoto</p>
+                </div>
+                <ul>
+                    <li><i class="fa-solid fa-calendar"></i>Terças e Quintas</li>
+                    <li><i class="fa-solid fa-clock"></i>18hrs às 21hrs</li>
+                    <hr>
+                    <li><i class="fa-solid fa-calendar"></i>Sextas</li>
+                    <li><i class="fa-solid fa-clock"></i>13hrs às 16hrs</li>
+                    <hr>
+                    <li><i class="fa-solid fa-calendar"></i>Finais de Semana</li>
+                    <li><i class="fa-solid fa-clock"></i>9hrs às 20hrs</li>
+                    <hr>
+                    <li><i class="fa-solid fa-location-dot"></i>Teams</li>
+                </ul>
             </div>
         </div>
+</main>
 
-            <div class="img">
-                <img src="./img/rede-social.jpg" alt="Cena do filme A Rede Social">
-            </div>
-            <div class="box-container">
-                <div class="box" data-horario='{"sessoes":[[[4],[14,16]]]}'>
-                    <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
-                    <h3>Luiz Eduardo</h3>
+<script>
+    (function(){
+        const dataHorario = document.querySelectorAll('.box');
+        
 
-                    <div class="box-info">
-                        <p>Monitor</p>
-                        <p>Presencial</p>
-                    </div>
-                    <ul>
-                        <li><i class="fa-solid fa-calendar"></i>As quintas-feiras</li>
-                        <li><i class="fa-solid fa-clock"></i>14hrs às 15h30min</li>
-                        <li><i class="fa-solid fa-location-dot"></i>Aquário - FT</li>
-                    </ul>
-                </div>
-    
-                <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]]] }'>
-                    <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
+        dataHorario.forEach(item =>{
+            const alerta = item.querySelector('.monitoria-p-off');
+            let horarios = JSON.parse(item.attributes['data-horario'].value);
+            const [sessao] = [horarios.sessoes]
+            const data = new Date();
+            const dataDia = data.getDay();
+            const dataHora = data.getHours();
+            
+            
+            sessao.forEach(itm => {
+                if(itm[0].indexOf(dataDia) != -1){
+                    if(dataHora >= itm[1][0] && dataHora < itm[1][1]){
+                        item.classList.add('monitoria-on')
+                        alerta.classList.add('monitoria-p-on')
+                    }
+                    else{
+                        item.classList.remove('monitoria-on')
+                        alerta.classList.remove('monitoria-p-on')
+                    }
+                }
+            })
+            
+        });
 
-                    <h3>Vinícius Baião</h3>
-                    <div class="box-info">
-                        <p>Monitor</p>
-                        <p>Presencial</p>
-                    </div>
-                    <ul>
-                        <li><i class="fa-solid fa-calendar"></i>A definir</li>
-                        <li><i class="fa-solid fa-clock"></i>A definir</li>
-                        <li><i class="fa-solid fa-location-dot"></i>A definir</li>
-                    </ul>
-                </div>
-    
-                <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]],[[5],[13,16]],[[6,0],[9,20]]]}'>
-                    <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
 
-                    <h3>Vinícius Giovani</h3>
-                    <div class="box-info">
-                        <p>Monitor</p>
-                        <p>Remoto</p>
-                    </div>
-                    <ul>
-                        <li><i class="fa-solid fa-calendar"></i>Terças e Quintas</li>
-                        <li><i class="fa-solid fa-clock"></i>18hrs às 21hrs</li>
-                        <hr>
-                        <li><i class="fa-solid fa-calendar"></i>Sextas</li>
-                        <li><i class="fa-solid fa-clock"></i>13hrs às 16hrs</li>
-                        <hr>
-                        <li><i class="fa-solid fa-calendar"></i>Finais de Semana</li>
-                        <li><i class="fa-solid fa-clock"></i>9hrs às 20hrs</li>
-                        <hr>
-                        <li><i class="fa-solid fa-location-dot"></i>Teams</li>
-                    </ul>
-                </div>
-            </div>
-    </main>
+    })();
+</script>
+
+ 
+    <footer>
+    <p>Mantido com ❤ pelos monitores. <br>Desenvolvido por <a href="http://luizerl.com">Luiz Eduardo.</a></p>
+</footer>
 
     <script>
-        (function(){
-            const dataHorario = document.querySelectorAll('.box');
-            
-
-            dataHorario.forEach(item =>{
-                const alerta = item.querySelector('.monitoria-p-off');
-                let horarios = JSON.parse(item.attributes['data-horario'].value);
-                const [sessao] = [horarios.sessoes]
-                const data = new Date();
-                const dataDia = data.getDay();
-                const dataHora = data.getHours();
-                
-                
-                sessao.forEach(itm => {
-                    if(itm[0].indexOf(dataDia) != -1){
-                        if(dataHora >= itm[1][0] && dataHora < itm[1][1]){
-                            item.classList.add('monitoria-on')
-                            alerta.classList.add('monitoria-p-on')
-                        }
-                        else{
-                            item.classList.remove('monitoria-on')
-                            alerta.classList.remove('monitoria-p-on')
-                        }
-                    }
-                })
-                
-            });
-
-   
-        })();
-    </script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
