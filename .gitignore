@@ -3,7 +3,8 @@ node_modules
 
 # build artefacts
 public
-
+gh-pages
+gh-pages.pub
 
 # secrets and errors
 .env
