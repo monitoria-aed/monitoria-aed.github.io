@@ -2,7 +2,6 @@
 node_modules
 
 # build artefacts
-public
 gh-pages
 gh-pages.pub
 
