@@ -8,6 +8,7 @@ gh-pages.pub
 # secrets and errors
 .env
 .log
+.nojekyll
 
 # macOS related files
 .DS_Store
