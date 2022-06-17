@@ -3,7 +3,7 @@
 /* MAIN */
 
 
-main{
+.main{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "conteudo imagem"
@@ -13,7 +13,7 @@ main{
     align-items: flex-start;
 }
 
-main .info{
+.main .info{
     display: flex;
     flex-direction: column;
     grid-area: conteudo;
@@ -23,7 +23,7 @@ main .info{
     padding: 2rem;
 }
 
-main .quote{
+.main .quote{
     overflow: hidden;  
     background-color: var(--tangerine);
     grid-area: quote;
@@ -32,7 +32,7 @@ main .quote{
     justify-content: center;
 }
 
-main  .img{
+.main  .img{
     display: flex;
     justify-content: center;
     grid-area: imagem;
@@ -40,12 +40,12 @@ main  .img{
     overflow: hidden;
 }
 
-main  .img img{
+.main  .img img{
     object-fit: cover;
     max-height: 50%;
 }
 
-main .quote blockquote{
+.main .quote blockquote{
     color: var(--dark-grey);
     padding: 4rem 2rem;
     display: flex;
@@ -53,13 +53,13 @@ main .quote blockquote{
     gap: 1rem;
 }
 
-main h1{
+.main h1{
     color: white;
     text-decoration:underline;
     text-decoration-color: var(--dark-blue);
 }
 
-main h1::after{
+.main h1::after{
     content: '2022/1';
     display: block;
     font-size: 1.6rem;
@@ -73,7 +73,7 @@ main h1::after{
 
 }
 
-main .info .button{
+.main .info .button{
     color: white;
     text-transform: uppercase;
     line-height: 2.4rem;
@@ -85,7 +85,7 @@ main .info .button{
     position: relative;
 }
 
-main .info .button:hover{
+.main .info .button:hover{
     background-color: var(--tangerine);
     color: var(--dark-grey);
 }
@@ -179,7 +179,7 @@ main .info .button:hover{
         grid-template-rows: 1fr;
     }
 
-    main{
+    .main{
         height: auto;
         grid-template-columns: 1fr;
         grid-template-areas: "conteudo"

@@ -3,16 +3,10 @@ resetStyle: '/css/reset.css'
 style: 'style.css'
 layout: 'base.njk'
 ---
-<main>
+<section class="main">
 
     <div class="info">
-        <nav>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./monitoria">Monitoria</a></li>
-                <li><a href="./sobre">Sobre</a></li>
-            </ul>
-        </nav>
+        {% include 'menu.njk'%}
         <h1>Algoritmos e Estruturas de Dados</h1>
         <p>Apresentar ao  aluno  as  mais  importantes  estruturas  de  dados  e  seus algoritmos, permitindo  assim  o  desenvolvimentode  conhecimentos,  habilidades,competênciase autonomiapara  o  desenvolvimento  de  soluções algorítmicas  eficientes  para  uso em sistemas  computacionais,especialmente  em  redes  de comunicação  e  na  computação  de dados.</p>
         <a href="#modulo-1" class="button">
@@ -28,7 +22,7 @@ layout: 'base.njk'
             <p>― Linus Torvalds</p>
         </blockquote>
     </div>
-</main>
+</section >
 
 <section id="modulos">
     <div class="info">
@@ -36,7 +30,7 @@ layout: 'base.njk'
         <p>Ao longo do semestre postaremos as resoluções das listas semanais na página <a href="/listas.html" target="_blank">listas</a>. Além disso, pretendemos colocar um FAQ para que os alunos possam de vez em quando dá uma conferida. Uma página com exemplos de projetos computacionais será alimentada ao final do semestre, podendo seu projeto estar nessa página. Além disso, uma guia com conteúdos adicionais será aos poucos alimentada.</p>
     </div>
     <div class="container">
-        <a href="./listas.html"  id="modulo-1" class="modulo">
+        <a href="./listas"  id="modulo-1" class="modulo">
             <i class="fa-solid fa-laptop-code"></i>
             <h3>Listas</h3>
             <p>Resoluções das Listas.</p>
@@ -46,12 +40,12 @@ layout: 'base.njk'
             <h3>FAQ</h3>
             <p>Perguntas frequentes.</p>
         </a>
-        <a href="./projetos.html"  id="modulo"class="modulo">
+        <a href="./projetos"  id="modulo"class="modulo">
             <i class="fa-solid fa-person-chalkboard"></i>
             <h3>Projetos Computacionais</h3>
             <p>Exemplos de projetos dos semestres anteriores.</p>
         </a>
-        <a href="./material.html"  id="modulo"class="modulo">
+        <a href="./material"  id="modulo"class="modulo">
             <i class="fa-solid fa-book"></i>
             <h3>Material Adicional</h3>
             <p>Vídeos, artigos e textos adicionais.</p>

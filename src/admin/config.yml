@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: monitoria-aed/monitoria-aed.github.io
-  branch: main
+  branch: master
   site_domain: monumental-fenglisu-4e4482.netlify.app
 
 media_folder: "img"
@@ -12,7 +12,16 @@ collections:
     folder: "src/listas" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Autor", name: "author", widget: "string"}
+      - {label: "Data de Publicação", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", default: ['listas']}
+      - {label: "Corpo", name: "body", widget: "markdown"}
+      - name: "questions"
+        label: "Questões"
+        create: true
+        widget: list
+        fields:
+        - {label: "Questão", name: "question", widget: "string"}
+        - {label: "Texto", name: "text", widget: "markdown"}
+        - {label: "Código", name: "code", widget: "code"}

@@ -1,17 +1,24 @@
 ---
 title: Resolução das Listas  - 
-resetStyle: 'css/reset.css'
+resetStyle: '../css/reset.css'
+style: '../css/listas.css'
 layout: 'base.njk'
 ---
+
+<header>
+    <a href="../">Algoritmos e Estrutura de Dados</a>
+    {% include 'menu.njk'%}
+</header>
+
 <div class="container">
     {%- for lista in collections.listas | reverse %}
 
     <div class="lista">
-        <h1>{{lista.data.title}}</h1>
-        <p>Postado por {{lista.data.author}}</p>
-        <p>Data: {{lista.data.date | postDate}}</p>
-        <p>{{lista.data.description}}</p>
-        <a href="{{lista.url}}">Saiba Mais</a>
+        <a href="{{lista.url}}"><h1>{{lista.data.title}}</h1></a>
+        <p class="author">Postado por {{lista.data.author}}</p>
+        <p class="date">Data: {{lista.data.date | postDate}}</p>
+        <p class="description">{{lista.data.description}}</p>
+        <a href="{{lista.url}}" class="button">Saiba Mais</a>
     </div>
 
     {%- endfor -%}}
