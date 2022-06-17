@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: monitoria-aed/monitoria-aed.github.io
   branch: master
   site_domain: monumental-fenglisu-4e4482.netlify.app
