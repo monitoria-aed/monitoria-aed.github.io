@@ -48,8 +48,9 @@ p{
 p,
 a,
 li,
+code,
 blockquote{
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
 }
 
 li{
@@ -96,4 +97,21 @@ footer{
 
 footer a{
     color: var(--dark-blue);
+}
+
+pre{
+    max-width: 60rem;
+}
+
+
+pre[class*=language-]{
+    box-shadow: none;
+    border: none;
+}
+code[class*=language-], pre[class*=language-]{
+    text-shadow: none;
+}
+:not(pre)>code[class*=language-], pre[class*=language-]{
+    background-color: #373c47;
+    border: none;
 }
