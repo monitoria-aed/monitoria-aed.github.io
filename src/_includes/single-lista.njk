@@ -7,15 +7,17 @@ layout: 'base.njk'
     <h1>{{title}}</h1>
     <p>{{author}}</p>
     <p>{{date}}</p>
-    <p>{{content}}</p>
+    <p>{{content | safe}}</p>
 </div>
 
+{% for questao in questions %}
 <div class="questao">
-    <h1>{{question}}</h1>
-    <div>
-        {{text}}
-    </div>
-    <code>
-        {{code}}
-    </code>
+    <p>{{questao.text | safe}}</p>
+    
+    <pre >
+        <code class="language-cpp">
+            {{questao.code.code}}
+        </code>
+    </pre>
 </div>
+{% endfor %}

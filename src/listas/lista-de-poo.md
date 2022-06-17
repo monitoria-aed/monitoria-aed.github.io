@@ -2,8 +2,6 @@
 title: Lista de POO
 author: Luiz Eduardo
 date: 2022-06-17T11:46:37.664Z
-tags:
-  - listas
 questions:
   - question: "1"
     text: >-
@@ -17,10 +15,12 @@ questions:
     code:
       lang: cpp
       code: |-
+        
         int i = 0;
 
         while( i < 100){
           cout << i++ << endl;
+        }
   - question: "2"
     text: >-
       <!--StartFragment-->
@@ -36,6 +36,7 @@ questions:
 
         while( i < 300){
           cout << i++ << endl;
+        }
 ---
 <!--StartFragment-->
 
