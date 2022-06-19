@@ -14,14 +14,16 @@ layout: 'base.njk'
     {%- for lista in collections.listas | reverse %}
 
     <div class="lista">
-        <a href="{{lista.url}}"><h1>{{lista.data.title}}</h1></a>
-        <p class="author">Postado por {{lista.data.author}}</p>
-        <p class="date">Data: {{lista.data.date | postDate}}</p>
+        <div class="lista-info">
+            <a class="title" href="{{lista.url}}"><h1>{{lista.data.title}}</h1></a>
+            <p class="author">Postado por {{lista.data.author}}</p>
+            <p class="date">Data: {{lista.data.date | postDate}}</p>
+        </div>
         <p class="description">{{lista.data.description}}</p>
         <a href="{{lista.url}}" class="button">Saiba Mais</a>
     </div>
 
-    {%- endfor -%}}
+    {%- endfor -%}
     
 </div>
 

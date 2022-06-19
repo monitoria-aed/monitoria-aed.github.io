@@ -8,7 +8,7 @@ questions:
       <!--StartFragment-->
 
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in vulputate ante. Ut nec justo turpis. Fusce commodo accumsan metus, sed bibendum tellus posuere ut. Sed interdum malesuada vulputate. Sed finibus interdum mauris et efficitur. Vestibulum egestas egestas risus id porttitor. Vestibulum in porttitor velit. Quisque nulla felis, auctor vehicula viverra in, lacinia quis orci.
+      Texto 1Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in vulputate ante. Ut nec justo turpis. Fusce commodo accumsan metus, sed bibendum tellus posuere ut. Sed interdum malesuada vulputate. Sed finibus interdum mauris et efficitur. Vestibulum egestas egestas risus id porttitor. Vestibulum in porttitor velit. Quisque nulla felis, auctor vehicula viverra in, lacinia quis orci.
 
 
       <!--EndFragment-->
@@ -16,7 +16,7 @@ questions:
       lang: cpp
       code: |-
         
-        int i = 0;
+        int ci = 0;
 
         while( i < 100){
           cout << i++ << endl;
@@ -26,7 +26,7 @@ questions:
       <!--StartFragment-->
 
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in vulputate ante. Ut nec justo turpis. Fusce commodo accumsan metus, sed bibendum tellus posuere ut. Sed interdum malesuada vulputate. Sed finibus interdum mauris et efficitur. Vestibulum egestas egestas risus id porttitor. Vestibulum in porttitor velit. Quisque nulla felis, auctor vehicula viverra in, lacinia quis orci.
+      Texto 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in vulputate ante. Ut nec justo turpis. Fusce commodo accumsan metus, sed bibendum tellus posuere ut. Sed interdum malesuada vulputate. Sed finibus interdum mauris et efficitur. Vestibulum egestas egestas risus id porttitor. Vestibulum in porttitor velit. Quisque nulla felis, auctor vehicula viverra in, lacinia quis orci.
 
 
       <!--EndFragment-->

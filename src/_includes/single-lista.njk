@@ -1,23 +1,36 @@
 ---
 resetStyle: /css/reset.css
+style: /css/single-lista.css
 layout: 'base.njk'
 ---
 
-<div class="container">
-    <h1>{{title}}</h1>
-    <p>{{author}}</p>
-    <p>{{date}}</p>
-    <p>{{content | safe}}</p>
-</div>
+<header>
+    <a href="../">Algoritmos e Estruturas de Dados</a>
+    {% include 'menu.njk' %}
+</header>
 
-{% for questao in questions %}
-<div class="questao">
-    <p>{{questao.text | safe}}</p>
-    
-    <pre >
-        <code class="language-cpp">
-            {{questao.code.code}}
-        </code>
-    </pre>
+<div class="container">
+    <div class="post-info">
+        <h1>{{title}}</h1>
+        <ul>
+            <li><p><i class="fa-solid fa-user"></i> {{author}}</p></li>
+            <li><p><i class="fa-solid fa-calendar"></i> {{date | postDate}}</p></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        {{content | safe}}
+    </div>
+
+    {% for questao in questions %}
+        <div class="questao">
+            <p>{{questao.text | safe}}</p>
+            
+            <pre >
+                <code class="language-cpp">
+                    {{questao.code.code}}
+                </code>
+            </pre>
+        </div>
+    {% endfor %}
 </div>
-{% endfor %}
