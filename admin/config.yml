@@ -4,7 +4,9 @@ backend:
   branch: master
   site_domain: monumental-fenglisu-4e4482.netlify.app
 
-media_folder: "img"
+media_folder: "src/img"
+
+publish_mode: editorial_workflow
 
 collections:
   - name: "listas" # Used in routes, e.g., /admin/collections/blog
