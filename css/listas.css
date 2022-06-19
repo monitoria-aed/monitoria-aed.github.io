@@ -1,16 +1,20 @@
+header > a{
+    color: white;
+}
+
 main{
-    min-height: 80vh;
+    min-height: 90vh;
 }
 .container{
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200,300));
+    padding: 2rem;
 
 }
 
 .lista{
     max-width: 30rem;
-    padding: 1rem;
+    padding: 3rem;
     border: 1px solid black;
 
 }
@@ -39,4 +43,8 @@ main{
     padding: .5rem 1rem;
     text-transform: uppercase;
     margin: 1rem 0;
+}
+
+.lista-info, .description, .button{
+    margin-bottom: 2rem;
 }
