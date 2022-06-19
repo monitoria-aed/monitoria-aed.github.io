@@ -18,7 +18,6 @@ collections:
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Data de Publicação", name: "date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", default: ['listas']}
-      - {label: "Descrição", name: "description", widget: "markdown"} #breve resumo
       - {label: "Corpo", name: "body", widget: "markdown"}
       - name: "questions"
         label: "Questões"
