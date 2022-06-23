@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/05efc4f42a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/single-lista.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>#1 - Lista de POO Algoritmos e Estrutura de Dados</title>
+</head>
+<body>
+    
+    <main>
+       
+<header>
+    <a href="../">Algoritmos e Estruturas de Dados</a>
+    <nav>
+    <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../monitoria">Monitoria</a></li>
+        <li><a href="../sobre">Sobre</a></li>
+    </ul>
+</nav>
+</header>
+
+<div class="container">
+    <div class="post-info">
+        <h1>#1 - Lista de POO</h1>
+        <ul>
+            <li><p><i class="fa-solid fa-user"></i> Luiz Eduardo, Vinícius Baião e Vinícius Giovani</p></li>
+            <li><p><i class="fa-solid fa-calendar"></i> Jun 19, 2022</p></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <p>A primeira lista de AED abordava os conceitos inicias de Programação Orientada à Objetos: atributos, métodos, construtores e métodos especiais.</p>
+
+    </div>
+
+    
+        <div class="questao">
+            <p>A primeira questão abordava os conceitos básicos de POO: declaração de atributos privados e definição de métodos especiais.</p>
+            
+            <pre >
+                <code class="language-cpp">
+                    class Agenda{
+    private:
+    // Atributos
+    string nome;
+    long long int telefone;
+
+    public:
+    // Getters
+    string getNome(){ return nome; }
+    long long int getTelefone(){ return telefone; }
+    // Setters
+    void setNome(string n){ nome = n; }
+    void setTelefone(long int t){ telefone = t; }
+
+    void displayData(){
+        cout &lt;&lt; &quot;Nome: &quot; &lt;&lt; nome &lt;&lt; endl;
+        cout &lt;&lt; &quot;Telefone: &quot; &lt;&lt; telefone &lt;&lt; endl;
+    }
+
+};
+                </code>
+            </pre>
+        </div>
+    
+</div>
+
+    </main>
+ 
+    <footer>
+    <p>Mantido com ❤ pelos monitores. <br>Desenvolvido por <a href="http://luizerl.com">Luiz Eduardo.</a></p>
+</footer>
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+<script src="/script/prism.js"></script>
+
+</body>
+</html>
