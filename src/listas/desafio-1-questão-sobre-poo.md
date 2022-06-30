@@ -80,7 +80,7 @@ questions:
       declaramos os atributos privados: nome, cpf, saldo e quantia (lembre-se
       que não é necessário utilizara palavra reservada `private`, pois por
       padrão o C++ reconhece que qualquer atributo que seja declarado estando
-      fora do escopo de `public `ou `protected `é `private`.
+      fora do escopo de `public`ou `protected `é `private`.
 
 
       Na parte pública do código separamos em três: os métodos pedidos pela questão, os *getters* e os *setters* dos atributos privados. Os métodos requisitados foram implementados fora do esqueleto da classe, isso é: fora do bloco da ContaCorrente, tal escolha foi feita para poder trabalhar mais livremente o código, deixar a estrutura da classe mais limpa e legível, e mostra-los uma forma diferente de declarar e inicializar métodos de classes. Os outros dois, *getters* e *setters* , foram implementados de acordo com o padrão.
@@ -180,10 +180,8 @@ questions:
             }
         }
 ---
-Como dito em aula os desafios são questões de provas retiradas dos semestres anteriores, valendo ponto extra. Portanto, além de uma ótima forma de você treinar, conhecer os modelos de perguntas cobradas em provas, e ainda por cima ganhar uma notinha extra, é também uma forma de você averiguar quanto tempo você levam para resolvê-lo, o que é importantíssimo, afinal vocês terão no máximo duas horas para responder três ou mais questões desse tipo.
+Como dito em aula os desafios são questões de provas retiradas dos semestres anteriores, valendo ponto extra. Portanto, além de uma ótima forma de você treinar, conhecer os modelos de perguntas cobradas em provas, e ainda por cima ganhar uma notinha extra, é também uma forma de você averiguar quanto tempo vocês levam para resolvê-lo, o que é importantíssimo, afinal vocês terão no máximo duas horas para responder três ou mais questões desse tipo.
 
 Aqui você vai encontrar uma solução proposta por um dos monitores, com algumas explicações sobre o código. Se você não conseguiu resolver, tente copiar essa questão (ao invés de usar o Ctrl + C, Ctrl + V) e ir explicando para si mesmo o que cada linha significa, isso o ajudará a internalizar determinados conceitos.
-
-
 
 Então, vamos lá 😉.
