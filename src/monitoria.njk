@@ -3,73 +3,71 @@ resetStyle: '../css/reset.css'
 style: '../css/monitoria.css'
 layout: 'base.njk'
 ---
-<main>
-    <div class="container ">
-        <div class="info">
-            {% include 'menu.njk'%}
-            <h1>Dias e Horários da Monitoria</h1>
-            <p>Ao lado os horários e locais onde ocorrerá as monitorias, remotas e presencias. Caso não consiga participar de uma determinada sessão, entre em contato com outro monitor e verifique se há como participar da reunião dele.</p>
-            
+<div class="container ">
+    <div class="info">
+        {% include 'menu.njk'%}
+        <h1>Dias e Horários da Monitoria</h1>
+        <p>Ao lado os horários e locais onde ocorrerá as monitorias, remotas e presencias. Caso não consiga participar de uma determinada sessão, entre em contato com outro monitor e verifique se há como participar da reunião dele.</p>
+        
+    </div>
+</div>
+
+<div class="img">
+    <img src="{{'../img/rede-social.jpg' | url }}" alt="Cena do filme A Rede Social">
+</div>
+<div class="box-container">
+    <div class="box" data-horario='{"sessoes":[[[4],[14,16]]]}'>
+        <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
+        <h3>Luiz Eduardo</h3>
+
+        <div class="box-info">
+            <p>Monitor</p>
+            <p>Presencial</p>
         </div>
+        <ul>
+            <li><i class="fa-solid fa-calendar"></i>As quintas-feiras</li>
+            <li><i class="fa-solid fa-clock"></i>14hrs às 15h30min</li>
+            <li><i class="fa-solid fa-location-dot"></i>Aquário - FT</li>
+        </ul>
     </div>
 
-        <div class="img">
-            <img src="{{'../img/rede-social.jpg' | url }}" alt="Cena do filme A Rede Social">
+    <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]]] }'>
+        <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
+
+        <h3>Vinícius Baião</h3>
+        <div class="box-info">
+            <p>Monitor</p>
+            <p>Presencial</p>
         </div>
-        <div class="box-container">
-            <div class="box" data-horario='{"sessoes":[[[4],[14,16]]]}'>
-                <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
-                <h3>Luiz Eduardo</h3>
+        <ul>
+            <li><i class="fa-solid fa-calendar"></i>A definir</li>
+            <li><i class="fa-solid fa-clock"></i>A definir</li>
+            <li><i class="fa-solid fa-location-dot"></i>A definir</li>
+        </ul>
+    </div>
 
-                <div class="box-info">
-                    <p>Monitor</p>
-                    <p>Presencial</p>
-                </div>
-                <ul>
-                    <li><i class="fa-solid fa-calendar"></i>As quintas-feiras</li>
-                    <li><i class="fa-solid fa-clock"></i>14hrs às 15h30min</li>
-                    <li><i class="fa-solid fa-location-dot"></i>Aquário - FT</li>
-                </ul>
-            </div>
+    <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]],[[5],[13,16]],[[6,0],[9,20]]]}'>
+        <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
 
-            <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]]] }'>
-                <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
-
-                <h3>Vinícius Baião</h3>
-                <div class="box-info">
-                    <p>Monitor</p>
-                    <p>Presencial</p>
-                </div>
-                <ul>
-                    <li><i class="fa-solid fa-calendar"></i>A definir</li>
-                    <li><i class="fa-solid fa-clock"></i>A definir</li>
-                    <li><i class="fa-solid fa-location-dot"></i>A definir</li>
-                </ul>
-            </div>
-
-            <div class="box" data-horario='{"sessoes":[[[2,4],[18,21]],[[5],[13,16]],[[6,0],[9,20]]]}'>
-                <p class="monitoria-p-off"><i class="fa-solid fa-circle-info"></i> A monitoria já começou! Está esperando o quê?</p>
-
-                <h3>Vinícius Giovani</h3>
-                <div class="box-info">
-                    <p>Monitor</p>
-                    <p>Remoto</p>
-                </div>
-                <ul>
-                    <li><i class="fa-solid fa-calendar"></i>Terças e Quintas</li>
-                    <li><i class="fa-solid fa-clock"></i>18hrs às 21hrs</li>
-                    <hr>
-                    <li><i class="fa-solid fa-calendar"></i>Sextas</li>
-                    <li><i class="fa-solid fa-clock"></i>13hrs às 16hrs</li>
-                    <hr>
-                    <li><i class="fa-solid fa-calendar"></i>Finais de Semana</li>
-                    <li><i class="fa-solid fa-clock"></i>9hrs às 20hrs</li>
-                    <hr>
-                    <li><i class="fa-solid fa-location-dot"></i>Teams ou Aquário - FT</li>
-                </ul>
-            </div>
+        <h3>Vinícius Giovani</h3>
+        <div class="box-info">
+            <p>Monitor</p>
+            <p>Remoto</p>
         </div>
-</main>
+        <ul>
+            <li><i class="fa-solid fa-calendar"></i>Terças e Quintas</li>
+            <li><i class="fa-solid fa-clock"></i>18hrs às 21hrs</li>
+            <hr>
+            <li><i class="fa-solid fa-calendar"></i>Sextas</li>
+            <li><i class="fa-solid fa-clock"></i>13hrs às 16hrs</li>
+            <hr>
+            <li><i class="fa-solid fa-calendar"></i>Finais de Semana</li>
+            <li><i class="fa-solid fa-clock"></i>9hrs às 20hrs</li>
+            <hr>
+            <li><i class="fa-solid fa-location-dot"></i>Teams ou Aquário - FT</li>
+        </ul>
+    </div>
+</div>
 
 <script>
     (function(){
